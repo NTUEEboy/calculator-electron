@@ -1,0 +1,4 @@
+.github/workflows/**
+**/dist/**
+**/node_modules/**
+**/.git/**
