@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A minimal Electron application written with Typescript",
   "scripts": {
+    "clean": "rimraf dist",
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "eslint -c .eslintrc --ext .ts ./src",
-    "start": "npm run build && electron ./dist/main.js"
+    "start": "npm run clean && npm run build && electron ./dist/main.js"
   },
   "repository": "https://github.com/electron/electron-quick-start-typescript",
   "keywords": [
